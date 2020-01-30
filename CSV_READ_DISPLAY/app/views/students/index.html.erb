@@ -1,0 +1,31 @@
+
+<div>
+<strong>Import data</strong>
+<%= form_tag import_students_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import from file" %>
+<% end %>
+</div>
+<%=flash[:notice] %>
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>Rollno</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @students.each do |s| %>
+        <tr>
+            <td><%= s.rollno %></td>
+            <td><%= s.name %></td>
+            <td><%= s.address %></td>
+            <td><%= s.marks %></td>
+        </tr>
+        <%end %>
+    </tbody>
+</table>
