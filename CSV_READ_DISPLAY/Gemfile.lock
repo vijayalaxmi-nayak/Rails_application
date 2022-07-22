@@ -33,8 +33,6 @@ GEM
       activemodel (= 5.2.4.1)
       activesupport (= 5.2.4.1)
       arel (>= 9.0)
-    activerecord-import (1.0.4)
-      activerecord (>= 3.2)
     activestorage (5.2.4.1)
       actionpack (= 5.2.4.1)
       activerecord (= 5.2.4.1)
@@ -173,7 +171,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -192,7 +190,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord-import
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
